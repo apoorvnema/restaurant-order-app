@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Restaurant Order App</h1>
+    <form id="form">
+        <label for="price">Choose Price:</label>
+        <input type="number" name="price" id="price">
+        <label for="dish">Choose Dish:</label>
+        <input type="text" name="dish" id="dish">
+        <label for="table">Choose a Table:</label>
+        <select id="table">
+            <option>Table 1</option>
+            <option>Table 2</option>
+            <option>Table 3</option>
+        </select>
+        <button type="submit" id="add">Add to bill</button>
+    </form>
+    <h2>Orders</h2>
+    <h4>Table 1<ul id="table1"></ul>
+    </h4>
+    <h4>Table 2<ul id="table2"></ul>
+    </h4>
+    <h4>Table 3<ul id="table3"></ul>
+    </h4>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+    integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+
+</html>
